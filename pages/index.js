@@ -5,7 +5,7 @@ export default function homePage() {
   useEffect(() => {
     const { pathname } = Router;
     if (pathname === "/") {
-      Router.push("/inscricao");
+      Router.push("/inscrever");
     }
   }, []);
 }
