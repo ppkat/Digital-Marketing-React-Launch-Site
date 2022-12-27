@@ -1,11 +1,15 @@
 import { Container } from './styles'
 import CTAButton from '../../styles/CTAButton'
-import React, { useEffect, useLayoutEffect } from 'react'
+import { useContext } from 'react'
+import InputContext from '../../Contexts/InputContext'
 
 export default function CTAButtonSession() {
 
+    const inputRef = useContext(InputContext)
+
     function handleClick() {
         scroll({ top: 0, behavior: 'smooth' })
+        if (inputRef.current) inputRef.current.focus()
     }
 
     return (
