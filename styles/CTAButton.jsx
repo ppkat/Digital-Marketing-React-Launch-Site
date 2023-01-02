@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
 const CTAButton = styled.button`
-    width: 80%;
+    width: 100%;
     background-color: #1445da;
     height: 80px;
     border-radius: 20px;
     border: none;
     font-size: 1em;
-    margin-top: 10px;
     font-size: 40px;
     
     :hover {

@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 import InputContext from "../Contexts/InputContext";
 import React, { useRef } from "react";
 
-export default function subscriptionPage() {
+export default function SubscriptionPage() {
     const inputRef = useRef(null)
     return (
         <InputContext.Provider value={inputRef}>
