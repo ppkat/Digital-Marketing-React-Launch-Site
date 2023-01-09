@@ -16,22 +16,18 @@ export const Container = styled.section`
 export const EventDescription = styled.div`
     margin-left: 10vw;
 
-    @media (max-width: 800px) {
-        margin-left: 0;
-        margin-top: 5vh;
-    }
-
-    h2 {
-        font-size: max(25px, 2.7vw);
-
-        @media (max-width: 800px) {
-            text-align: center;
-        }
-    }
-
     p {
         font-size: max(16px, 1.3vw);
         text-align: justify;
+    }
+    
+    @media (max-width: 800px) {
+        margin-left: 0;
+        margin-top: 5vh;
+
+        h2 {
+            text-align: center;
+        }
     }
 `
 

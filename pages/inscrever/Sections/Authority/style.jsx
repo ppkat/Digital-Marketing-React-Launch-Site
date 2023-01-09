@@ -4,7 +4,6 @@ import Image from 'next/image'
 export const Container = styled.section`
     margin-top: 10%;
     padding: 3% 15%;
-    color: #0d60dd;
     text-align: justify;
     font-size: max(25px, 2.2vw);
     background-image: url('/images/banner_jp.png');

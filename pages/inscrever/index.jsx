@@ -1,11 +1,12 @@
-import Authority from "../components/Authority";
-import CallToAction from "../components/CallToAction";
-import CTAButtonSession from "../components/CTAButtonSession";
-import EventDeliverables from "../components/EventDeliverables";
-import Programation from "../components/Programation";
-import Footer from "../components/Footer"
-import InputContext from "../Contexts/InputContext";
 import React, { useRef } from "react";
+import Footer from "/components/Footer";
+import CallToAction from "./Sections/CallToAction";
+import CTAButtonSession from "./Sections/CTAButtonSession";
+import EventDeliverables from "./Sections/EventDeliverables";
+import Programation from "./Sections/Programation";
+import InputContext from "/Contexts/InputContext";
+import Authority from "./Sections/Authority";
+
 
 export default function SubscriptionPage() {
     const inputRef = useRef(null)

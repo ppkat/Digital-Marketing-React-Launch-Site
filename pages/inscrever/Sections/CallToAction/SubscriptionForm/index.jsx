@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
-import InputContext from "../../../Contexts/InputContext"
-import CTAButton from "../../../styles/CTAButton"
+import InputContext from "/Contexts/InputContext"
+import CTAButton from "/styles/CTAButton"
 import { ErrorSpan, Form, StyledLink } from "./styles"
 import isEmail from 'validator/lib/isEmail';
 

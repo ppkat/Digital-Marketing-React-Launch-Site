@@ -1,7 +1,7 @@
 import { Container } from './styles'
-import CTAButton from '../../styles/CTAButton'
+import CTAButton from '../../../../styles/CTAButton'
 import { useContext } from 'react'
-import InputContext from '../../Contexts/InputContext'
+import InputContext from '/Contexts/InputContext'
 
 export default function CTAButtonSession() {
 

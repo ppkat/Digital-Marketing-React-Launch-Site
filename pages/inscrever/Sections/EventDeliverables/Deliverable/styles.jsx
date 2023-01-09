@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Title from '/components/Title'
 
 export const Container = styled.div`
     display: flex;
@@ -18,12 +19,10 @@ export const Container = styled.div`
         }
     }
 `
+export const StyledTitle = styled(Title)`
+    padding: 3%;
+`
+
 export const TitleWithImage = styled.div`
     display: flex;
-    color: #3783f5d6;
-
-    h2 {
-        padding: 3%;
-        font-size: max(20px, 2vw)
-    }
 `

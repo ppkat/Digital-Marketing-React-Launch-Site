@@ -9,12 +9,6 @@ export const Container = styled.section`
     text-align: center;
     @media (max-width: 800px) {
         padding: 2% 10px;
-        
-    }
-        
-    h1 {
-        font-size: max(25px, 3.2vw);
-        color: #307de2
     }
 
     p {

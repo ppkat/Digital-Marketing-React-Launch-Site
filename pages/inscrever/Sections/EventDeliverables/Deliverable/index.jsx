@@ -1,4 +1,5 @@
-import { Container, TitleWithImage } from "./styles";
+import { Container, TitleWithImage, StyledTitle } from "./styles";
+import Title from '/components/Title'
 import Icon from "./Icon";
 
 export default function Deliverable({ src, alt, title, text }) {
@@ -6,7 +7,7 @@ export default function Deliverable({ src, alt, title, text }) {
         <Container>
             <TitleWithImage>
                 <Icon src={src} alt={alt} />
-                <h2>{title}</h2>
+                <StyledTitle color='#3783f5d6' tag='h3'>{title}</StyledTitle>
             </TitleWithImage>
 
             <p>{text}</p>
