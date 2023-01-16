@@ -4,7 +4,7 @@ export const ImageContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 20%;
+    max-width: ${props => props.size ?? 20}%;
     margin-right: 10px;
     
     img {
@@ -12,6 +12,6 @@ export const ImageContainer = styled.div`
     }
 
     @media (max-width: 800px) {
-        max-width: min(20%, 50px);
+        max-width: min(${props => props.size ?? 20}%, 50px);
     }
 `

@@ -1,7 +1,13 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-const CTAButton = styled.button`
-    width: 100%;
+export const Container = styled.div`
+    padding: 0;
+    margin: 0;
+    width: ${props => props.buttWidth}%;
+`;
+
+export const StyledButton = styled.button`
+    min-width: 100%;
     background-color: #1445da;
     height: 80px;
     border-radius: 20px;
@@ -19,5 +25,3 @@ const CTAButton = styled.button`
         font-size: max(0.8em, 30px);
     }
 `
-
-export default CTAButton

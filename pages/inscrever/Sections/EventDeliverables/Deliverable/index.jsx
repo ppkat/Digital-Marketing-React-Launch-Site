@@ -1,6 +1,5 @@
 import { Container, TitleWithImage, StyledTitle } from "./styles";
-import Title from '/components/Title'
-import Icon from "./Icon";
+import Icon from "/components/Icon";
 
 export default function Deliverable({ src, alt, title, text }) {
     return (

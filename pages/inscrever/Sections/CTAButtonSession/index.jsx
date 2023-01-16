@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import CTAButton from '../../../../styles/CTAButton'
+import CTAButton from '/components/CTAButton'
 import { useContext } from 'react'
 import InputContext from '/Contexts/InputContext'
 

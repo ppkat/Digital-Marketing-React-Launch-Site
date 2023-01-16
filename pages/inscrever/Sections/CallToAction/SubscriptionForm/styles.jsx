@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Link from 'next/link'
 
 export const Form = styled.form`
         width: 100%;
@@ -23,12 +22,6 @@ export const Form = styled.form`
             }
         }
     `;
-
-export const StyledLink = styled(Link)`
-    padding: 0;
-    margin: 0;
-    width: 80%;
-`;
 
 export const ErrorSpan = styled.span`
     font-size: 20px;
