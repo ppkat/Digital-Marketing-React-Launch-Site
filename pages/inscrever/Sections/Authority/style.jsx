@@ -1,9 +1,7 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+import BaseSection from '/styles/BaseSection.jsx'
 
-export const Container = styled.section`
-    margin-top: 10%;
-    padding: 3% 15%;
+export const Container = styled(BaseSection)`
     text-align: justify;
     font-size: max(25px, 2.2vw);
     background-image: url('/images/banner_jp.png');
@@ -18,10 +16,6 @@ export const Container = styled.section`
 
     @media (max-width: 1200px) {
         background-image: url('/images/background_medium.png');
-    }
-
-    @media (max-width: 800px) {
-        padding: 1% 10px;
     }
     
     @media (max-width: 550px) {

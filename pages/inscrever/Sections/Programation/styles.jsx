@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import BaseSection from "/styles/BaseSection";
 
-export const Container = styled.section`
+export const Container = styled(BaseSection)`
     margin-top: 10vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 15%;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import BaseSection from "/styles/BaseSection";
 
-export const Container = styled.section`
+export const Container = styled(BaseSection)`
     margin-top: 10%;
     padding: 0 15%;
 
