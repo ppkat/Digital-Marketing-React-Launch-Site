@@ -6,6 +6,7 @@ const Container = styled(BaseSection)`
     margin-top: 0;
     p{
         padding-bottom: 5%;
+        text-align: justify;
     }
 `
 

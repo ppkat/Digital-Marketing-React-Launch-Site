@@ -5,7 +5,7 @@ export default function Title({ tag = 'h1', color = 'white', align = 'center', c
     const hNum = Number(tag.slice(-1)) // the last number of "h" tags
     const fontSize = () => {
         let fontVw = 2.6
-        let fontPx = 20
+        let fontPx = 18
         for (let i = hNum; i > 1; i--) {
             fontVw -= 0.45
         }
