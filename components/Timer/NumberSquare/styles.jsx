@@ -16,9 +16,4 @@ export const SquareDiv = styled.div`
     border-radius: 10%;
     font-size: max(18px, 2.2vw);
     font-weight: bold;
-    margin-left: 15px;
-
-    @media (max-width: 800px) {
-        margin-left: 5px;
-    }
 `
