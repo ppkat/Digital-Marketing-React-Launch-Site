@@ -4,9 +4,10 @@ import { Container, SquareWithText } from "./styles";
 
 export default function Timer({ date }) {
 
-    const [currentDate, setCurrentDate] = useState(() => new Date())
+    const [currentDate, setCurrentDate] = useState(date)
 
     useEffect(() => {
+        setCurrentDate(new Date())
         const intervalId = setInterval(() => {
             setCurrentDate(new Date())
         }, 1000)
@@ -27,7 +28,7 @@ export default function Timer({ date }) {
     return (
         <Container>
             {timeTypes.map((timePiece, i) =>
-                <SquareWithText>
+                <SquareWithText key={i}>
                     <NumberSquare value={timePiece}></NumberSquare>
                     {
                         i === 0 ? 'DIAS'
