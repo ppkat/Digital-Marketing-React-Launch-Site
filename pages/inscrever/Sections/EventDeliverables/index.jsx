@@ -47,7 +47,7 @@ export default function EventDeliverables() {
                 {
                     Deliveries.map((delivery, i, arr) => (
                         ((i + 1) % 2 !== 0) ? (
-                            <DeliverablesRow>
+                            <DeliverablesRow key={i}>
                                 <Deliverable
                                     src={delivery.src}
                                     alt={delivery.alt}

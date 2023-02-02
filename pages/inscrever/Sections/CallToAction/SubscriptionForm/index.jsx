@@ -3,6 +3,7 @@ import InputContext from "/Contexts/InputContext"
 import { ErrorSpan, Form } from "./styles"
 import isEmail from 'validator/lib/isEmail'
 import CTAButton from '/components/CTAButton'
+import emailListSubscribe from "/lib/emailListSubscribe"
 
 export default function SubscriptionForm() {
 
@@ -17,6 +18,14 @@ export default function SubscriptionForm() {
             setErr(true)
             e.preventDefault() //cancels next Link
             return
+        }
+
+        try {
+            emailListSubscribe(email)
+        }
+        catch (err) {
+            setErr(true)
+            console.log(err)
         }
     }
 
