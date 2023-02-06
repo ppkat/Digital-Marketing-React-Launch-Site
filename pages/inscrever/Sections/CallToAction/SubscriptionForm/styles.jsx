@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
-        width: 100%;
+        width: 80%;
         display: flex;
         align-items: center;
         flex-direction: column;
         font-size: 40px;
 
-        input {
-            width: 80%;
+        .textInput {
+            width: 100%;
             height: 80px;
             background-color: white;
             padding: 20px;
@@ -27,4 +27,22 @@ export const ErrorSpan = styled.span`
     font-size: 20px;
     color: #ff2020;
     margin-bottom: 10px;
+`
+
+export const EmailsAdvertising = styled.span`
+    font-size: max(0.7vw, 7px);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        margin: 5px 0;
+        font-size: max(1vw, 10px);
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: min(0.8vw, 10px);
+        }
+    }
 `
