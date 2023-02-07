@@ -1,5 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import isEmail from 'validator/lib/isEmail'
+import { config } from 'dotenv'
+config()
 
 //sorry for putting typescript on middle of application, but i can't work without it anymore ;D
 export default async function emailInscribe(req: NextApiRequest, res: NextApiResponse) {
@@ -14,11 +16,12 @@ export default async function emailInscribe(req: NextApiRequest, res: NextApiRes
   }
 
   try {
-    const response = await fetch('connect.mailerlite.com/api/subscribers', {
+    const response = await fetch('https://connect.mailerlite.com/api/subscribers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'Authorization': `Bearer ${process.env.API_TOKEN}`
       },
       body: JSON.stringify({
         email: email
