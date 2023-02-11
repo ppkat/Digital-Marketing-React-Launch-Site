@@ -1,8 +1,9 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useState } from "react"
 import InputContext from "/Contexts/InputContext"
 import { EmailsAdvertising, ErrorSpan, Form } from "./styles"
 import isEmail from 'validator/lib/isEmail'
 import CTAButton from '/components/CTAButton'
+import emailListSubscribe from "/lib/emailListSubscribe"
 import { useRouter } from 'next/router'
 
 export default function SubscriptionForm() {
@@ -10,18 +11,15 @@ export default function SubscriptionForm() {
     const router = useRouter()
     const [err, setErr] = useState(false)
 
-    useEffect(() => {
-        setErr(Boolean(JSON.parse(localStorage.getItem('invalidEmail'))))
-    }, [])
-
-    function handleClick(e) {
+    async function handleClick(e) {
         e.preventDefault()
         const email = inputRef.current ? inputRef.current.value : null
 
         if (!isEmail(email)) return setErr(true)
+        emailListSubscribe(email)
+            .then(() => router.push('/obrigado'))
+            .catch(err => setErr(true))
 
-        localStorage.setItem('email', email)
-        router.push(`/obrigado`)
     }
 
     return (
@@ -33,7 +31,7 @@ export default function SubscriptionForm() {
                 <span><input type='checkbox' checked={true}></input> Concordo em receber os e-mails</span>
             </EmailsAdvertising> */} {/*caso precise concordar em receber emails, por enquanto, acho desnecessário*/}
 
-            <CTAButton buttWidth={100} onClick={handleClick}>Quero Participar</CTAButton>
+            <CTAButton href="/obrigado" buttWidth={100} onClick={handleClick}>Quero Participar</CTAButton>
         </Form >
     )
 }

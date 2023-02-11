@@ -5,7 +5,7 @@ config()
 
 //sorry for putting typescript on middle of application, but i can't work without it anymore ;D
 export default async function emailInscribe(req: NextApiRequest, res: NextApiResponse) {
-  const email = req.body.email;
+  const email: string | undefined | null = req.body.email;
 
   if (!email) {
     return res.status(400).json({ message: 'Email é obrigatório' });
