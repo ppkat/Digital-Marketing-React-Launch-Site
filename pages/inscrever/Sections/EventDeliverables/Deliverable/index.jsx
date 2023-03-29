@@ -1,4 +1,4 @@
-import { Container, TitleWithImage, StyledTitle } from "./styles";
+import Container, { TitleWithImage, StyledTitle } from "./styles";
 import Icon from "/components/Icon";
 
 export default function Deliverable({ src, alt, title, text }) {

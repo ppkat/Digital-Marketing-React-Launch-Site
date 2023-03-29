@@ -3,22 +3,29 @@ import crypto from 'crypto'
 import { config } from "dotenv";
 config()
 
-export default function webHooksListeners(req: NextApiRequest, res: NextApiResponse) {
-    if (!req.headers['Signature']) return res.status(401).end()
-    if (!req.body) return res.status(400).end()
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+    const API_KEY = process.env.API_TOKEN;
 
-    const signature: string = req.headers['Signature'].toString()
-    console.log(signature)
+    if (req.method === 'POST') {
+        const signature = req.headers['signature'] as string;
+        const payload = JSON.stringify(req.body);
+        const hash = crypto.createHmac('sha256', API_KEY).update(payload).digest('hex');
 
-    // Create a hash using the request body and the secret key
-    const hash = crypto
-        .createHmac('sha256', process.env.API_TOKEN)
-        .update(JSON.stringify(req.body))
-        .digest('hex');
+        console.log(signature, hash)
 
-    if (signature !== hash) return res.status(401).end()
+        if (signature !== hash) {
+            res.status(403).end();
+            return;
+        }
 
-    const newSubscriber = req.body
-    console.log(newSubscriber)
-    return res.status(200).json(newSubscriber)
+        const event = req.body.event;
+        if (event.type === 'subscriber.created') {
+            const { id, email, fields } = event.data;
+            console.log(`New subscriber: ${email}, ID: ${id}, Name: ${fields.name}`);
+        }
+
+        res.status(200).end();
+    } else {
+        res.status(405).end();
+    }
 }

@@ -1,5 +1,5 @@
 import SubscriptionForm from "./SubscriptionForm"
-import { Container } from "./styles"
+import Container from "./styles"
 import Title from "/components/Title"
 
 export default function CallToAction() {

@@ -1,5 +1,5 @@
 import Title from "/components/Title";
-import { Container } from "./styles";
+import Container from "./styles";
 
 export default function EmailResearch() {
     return (

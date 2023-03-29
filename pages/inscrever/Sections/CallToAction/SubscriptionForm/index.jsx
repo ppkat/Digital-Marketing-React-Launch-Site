@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import InputContext from "/Contexts/InputContext"
-import { EmailsAdvertising, ErrorSpan, Form } from "./styles"
+import Form, { EmailsAdvertising, ErrorSpan } from "./styles"
 import isEmail from 'validator/lib/isEmail'
 import CTAButton from '/components/CTAButton'
 import emailListSubscribe from "/lib/emailListSubscribe"

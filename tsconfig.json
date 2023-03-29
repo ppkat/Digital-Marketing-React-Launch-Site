@@ -28,7 +28,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "styles/BaseSection.jsx"
   ],
   "exclude": [
     "node_modules"

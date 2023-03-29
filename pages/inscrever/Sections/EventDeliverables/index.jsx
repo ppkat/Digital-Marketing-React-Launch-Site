@@ -1,4 +1,4 @@
-import { Container, Title, DeliverablesRow, DeliverablesCollum } from "./styles";
+import Container, { Title, DeliverablesRow, DeliverablesCollum } from "./styles";
 import Deliverable from "./Deliverable";
 
 export default function EventDeliverables() {

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Title from '../../../../components/Title'
-import { Container, EventDescription, ImageContainer } from './styles'
+import Container, { EventDescription, ImageContainer } from './styles'
 
 export default function Programation() {
 

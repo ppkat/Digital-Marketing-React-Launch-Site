@@ -1,4 +1,4 @@
-import { Container } from "./style";
+import Container from "./styles";
 import Title from '/components/Title'
 
 export default function Authority() {

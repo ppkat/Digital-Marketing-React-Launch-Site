@@ -1,4 +1,4 @@
-import { Container, EventNameContainer } from "./styles";
+import Container, { EventNameContainer } from "./styles";
 import Timer from "/components/Timer"
 
 export default function EventTimer() {

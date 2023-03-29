@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Footer from "/components/Footer";
 import CallToAction from "./Sections/CallToAction";
-import CTAButtonSession from "./Sections/CTAButtonSession";
+import CTAButtonSession from "./Sections/CTAButtonSection";
 import EventDeliverables from "./Sections/EventDeliverables";
 import Programation from "./Sections/Programation";
 import InputContext from "/Contexts/InputContext";
