@@ -12,8 +12,7 @@ export const StyledButton = styled.button`
     height: 80px;
     border-radius: 20px;
     border: none;
-    font-size: 1em;
-    font-size: 40px;
+    font-size: 2.4vw;
     
     :hover {
         background-color: #1157ec;
@@ -22,6 +21,6 @@ export const StyledButton = styled.button`
 
     @media (max-width : 800px) {
         text-align: center;
-        font-size: max(0.8em, 30px);
+        font-size: 4.5vw;
     }
 `

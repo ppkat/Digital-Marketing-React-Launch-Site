@@ -5,6 +5,7 @@ function CTAButton({ children, href, buttWidth, ...props }) {
 
     const Tag = href ? Link : 'div'
     buttWidth = buttWidth ?? 80
+
     return (
         <Container buttWidth={buttWidth}>
             {

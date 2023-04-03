@@ -1,6 +1,6 @@
 import Container from "./styles";
 
-export default function Title({ tag = 'h1', color = 'white', align = 'center', children }) {
+export default function Title({ tag = 'h1', color = 'white', align = 'center', children, ...props }) {
 
     const hNum = Number(tag.slice(-1)) // the last number of "h" tags
     const fontSize = () => {
@@ -14,7 +14,7 @@ export default function Title({ tag = 'h1', color = 'white', align = 'center', c
 
     const Tag = tag
     return (
-        <Container color={color} align={align} fontSizeRelative={fontSize().relative} fontSizeMin={fontSize().min}>
+        <Container color={color} align={align} fontSizeRelative={fontSize().relative} fontSizeMin={fontSize().min} {...props}>
             <Tag>{children}</Tag>
         </Container>
     )
