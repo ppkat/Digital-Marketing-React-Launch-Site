@@ -1,9 +1,9 @@
 import { ImageContainer } from "./styles"
 import Image from 'next/image'
 
-export default function Icon({ src, alt, size }) {
+export default function Icon({ src, alt, size, ...props }) {
     return (
-        <ImageContainer size={size}>
+        <ImageContainer size={size} {...props}>
             <Image
                 src={src}
                 alt={alt}
