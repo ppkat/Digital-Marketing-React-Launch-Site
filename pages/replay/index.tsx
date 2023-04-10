@@ -1,6 +1,7 @@
 import Authority from './Sections/Authority'
 import BonusSection from './Sections/BonusSection'
 import ReplaySection from './Sections/ReplaySection'
+import Footer from '/components/Footer'
 
 export default function Replay() {
     return (
@@ -8,6 +9,7 @@ export default function Replay() {
             <ReplaySection />
             <BonusSection />
             <Authority />
+            <Footer />
         </>
     )
 }
