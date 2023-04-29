@@ -16,6 +16,7 @@ export default function SubscriptionForm() {
         const email = inputRef.current ? inputRef.current.value : null
 
         if (!isEmail(email)) return setErr(true)
+        fbq('track', 'Lead') //Complete Registration can't be used for conversion event on FB advertisement
         emailListSubscribe(email)
             .then(() => router.push('/obrigado'))
             .catch(err => setErr(true))

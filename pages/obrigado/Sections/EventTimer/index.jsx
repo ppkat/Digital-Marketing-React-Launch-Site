@@ -4,8 +4,8 @@ import Timer from "/components/Timer"
 export default function EventTimer() {
     return (
         <Container>
-            <EventNameContainer>𝕀ᎠÚ𝓢𝕋𝓡ιᴀ 𝘿0 B𝐎𝘛</EventNameContainer>
-            <Timer date={new Date(2023, 1, 1, 20)} />
+            <EventNameContainer>𝘐ηɖúʂᖶɾ𝕚ą 𝔡໐ ๖σᵗ</EventNameContainer>
+            <Timer date={new Date(2023, 3, 27, 20)} />
         </Container>
     )
 }
