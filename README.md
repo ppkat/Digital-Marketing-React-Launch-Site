@@ -1,34 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Digital-Marketing-React-Launch-Site
+Um site para capturar leads para um lançamento do marketing digital.
+O site foi utilizado para um lançamento de verdade e você pode **acessá-lo clicando no link: https://discordultrabots.com/**
 
-## Getting Started
+## Tecnologias
 
-First, run the development server:
+Estas são as tecnologias utilizadas no projeto
 
-```bash
-npm run dev
-# or
-yarn dev
+* React js
+* Next js
+* Styled components
+* Facebook pixel
+* Typescript
+
+## Serviços utilizados
+
+* Github
+* Mailer Lite
+* Rack Nerd VPS
+
+## Getting started
+
+1 - Install dependencies: 
+
+[Install Nodejs](https://nodejs.org/)
+
+2 - Clone the repository running into your terminal:
+
+```sh
+git clone https://github.com/ppkat/quizBot-discord.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3 - Install the required libraries using:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm i
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4 - Run the project with dev mode:
+```
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Como utilizar
 
-## Learn More
+### 1 - Quando você acessar, será automaticamente direcionado para a rota /inscrever, na qual é dividida em 5 seções
 
-To learn more about Next.js, take a look at the following resources:
+### 2 - A primeira delas é a "Call to Action" que seria a chamada para ação, que é exibida como primeira coisa para que o usuário se inscreva no evento o mais rápido possível. Nela há também a promessa sobre o que o lead vai ganhar ao assistir à aula
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Call To Action](public/readme/home-page.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 3 - A segunda seção é a programação do evento, que possui uma descrição maior sobre o que será o evento e quando ele vai ocorrer
 
-## Deploy on Vercel
+![Event programming](public/readme/event-programming.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4 - Então temos os entregáveis, onde é exibido todas as coisas que serão entregues durante o evento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Event deliverables](public/readme/event-deliverables.png)
+
+### 5 - Nas duas últimas seções temos, respectivamente, a autoridade e o botão para retornar à primeira seção e se inscrever no evento. A seção de autoridade serve para reforçar a autoridade da pessoas que dará a aula, para que gere um pouco de conexão com o visualizador.
+
+![Call to action button and authority sections](public/readme/authority-ctabutton.png)
+
+### 6 - Ao inserir o seu email e enviar o formulário, você será redirecionado para a página de obrigado e seu email será cadastrado na ferramenta de envio de emails. Nesta página há mais um botão para entrar no grupo do evento, um convite para responder a pesquisa que foi automaticamente enviada para o email cadastrado e um timer que mostra quanto tempo falta para o evento (que no caso está negativo já que a data do evento já passou)
+
+![Thanks page](public/readme/obrigado.png)
+
+### 7- Por último, também há a página /replay, que mostra tem como primeira seção o replay da aula com um botão logo abaixo que leva direto para a página de vendas do produto que está sendo vendido. Também há seções para falar sobre o bônus e a garantia do produto
+
+![Replay page](public/readme/replay-page.gif)
+
+### 8 - E claro, todas as páginas são responsivas e são exibidas adequadamente para cada dispositivo
+
+![Showing the page responsively](public/readme/inscrever-responsivly.gif)
+![Showing the page responsively](public/readme/replay-responsively.gif)
+
+### 9 - Por último, as páginas também possuem o pixel do Facebook instalado para poder contabilizar ações e estudar o comportamento do usuário
+
+  ## Autores
+
+  * **João Pedro Gaspar Pereira** 
+
+  Se gostou do projeto deixe um star, e sugestões são bem-vindas!
+
+  Obrigado por visitar este projeto, espero que você tenha um bom dia e uma ótima vida :)

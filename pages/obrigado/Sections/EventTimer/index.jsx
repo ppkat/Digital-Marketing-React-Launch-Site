@@ -5,7 +5,7 @@ export default function EventTimer() {
     return (
         <Container>
             <EventNameContainer>𝘐ηɖúʂᖶɾ𝕚ą 𝔡໐ ๖σᵗ</EventNameContainer>
-            <Timer date={new Date(2023, 3, 27, 20)} />
+            <Timer date={new Date(2023, 5, 1, 20)} />
         </Container>
     )
 }
