@@ -65,7 +65,7 @@ npm run dev
 
 ![Thanks page](public/readme/obrigado.png)
 
-### 7- Por último, também há a página /replay, que mostra tem como primeira seção o replay da aula com um botão logo abaixo que leva direto para a página de vendas do produto que está sendo vendido. Também há seções para falar sobre o bônus e a garantia do produto
+### 7- Também há a página /replay, que mostra tem como primeira seção o replay da aula com um botão logo abaixo que leva direto para a página de vendas do produto que está sendo vendido. Também há seções para falar sobre o bônus e a garantia do produto
 
 ![Replay page](public/readme/replay-page.gif)
 
